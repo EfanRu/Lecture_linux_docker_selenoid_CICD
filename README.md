@@ -2,16 +2,26 @@
 Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 
 ### Titles
+<details><summary>Titles:</summary>
+	
 	- linux commands
 	- docker
 	- Jenkins & TeamCity
 	- Let's code
+ 
+</details>
 	
-### Ssh
+### SSH
+<details><summary>SSH commands:</summary>
+	
 	ssh-keygen
 	ssh -i ~/.ssh/test.pub <login>@<public ip>
+ 
+ </details>
 	
 ## Linux commands
+<details><summary>Linux commands:</summary>
+	
 	ls -la - посмотреть содержимое каталога
 	cd - сменить категорию
 	mkdir - создать каталог
@@ -25,11 +35,14 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 	chown - смена пользователя
 	top - команда для просмотра использования ресурсов
 	grep - поиск по передаваемым данным
-	
+ 
+ </details>
 	
 	Более подробней можно ознакомиться тут: https://habr.com/ru/articles/655275/
 	
 ### Docker commands
+<details><summary>Docker commands:</summary>
+	
 	docker ps - посмотреть запущенные контейнеры
 	docker pa -a - посмотреть запущенные и осттановленные контейнеры
 	docker stop - остановить контейнер
@@ -37,15 +50,22 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 	docker rmi - удалить образ
 	docker pull - скачать образ из удаленного репозитория
 	docker push - загрузить образ в удаленный репозиторий
-	
+ 
+ </details>
 	
 	Более подробней с командами можно ознакомиться тут: https://docs.docker.com/reference/cli/docker/
 	
 ### Docker install
+<details><summary>Docker install commands:</summary>
+	
 	sudo apt install docker.io -y
 	sudo usermod -aG docker $USER
+ 
+  </details>
 	
 ### Selenoid run
+<details><summary>Selenoid run commands:</summary>
+	
 	docker run -d                                   \
 	--name selenoid                                 \
 	-p 4444:4444                                    \
@@ -54,11 +74,15 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 	aerokube/selenoid:latest-release
 	
 	docker pull selenoid/chrome:120.0
-	
-	https://aerokube.com/selenoid/latest/
+ 
+  </details>
+
+	Более подробней с командами можно ознакомиться тут: https://aerokube.com/selenoid/latest/
 	
 	
 ### Jenkins install
+<details><summary>Jenkins install commands:</summary>
+	
 	sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
 	  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 	echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
@@ -71,6 +95,8 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 	sudo systemctl enable jenkins
 	sudo systemctl status jenkins
 	cat /var/lib/jenkins/secrets/initialAdminPassword
+ 
+</details>
 	
 ### Team city install
 	https://www.jetbrains.com/help/teamcity/install-teamcity-server-on-linux-or-macos.html#Example%3A+Installation+using+Ubuntu+Linux
@@ -80,7 +106,8 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 	
 	
 ### Home task:
-	Easy peasy lemon squeezy:
+ <details><summary>Easy peasy lemon squeezy:</summary>
+	 
 		Docker:
 			- Установить docker*;
 			- Запустить контейнер с selenoid;
@@ -94,8 +121,11 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 			Для проверки выполнения прислать ссылку на билд.
 			
 		* - для работы docker на Windows потребуется WSL (подсистема Windows для Linux), которой нет в старых версиях Windows. В таком случае можно установить один из сервесов для виртуализации и запустить виртуальную машину, например под Linux.
-	
-	Job hard go pro (необязательное задание для скилловичков, можно выполнить только часть):
+  
+</details>
+
+ <details><summary>Job hard go pro (необязательное задание для скилловичков, можно выполнить только часть):</summary>
+	 
 		Docker:
 			- выполнить задание из раздела "Easy peasy lemon squeezy" на виртуальной машине или сервере linux;
 			- добавить поддержку нескольких версий браузеров;
@@ -108,8 +138,13 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 			- установить (Jenkins | TeamCity) на виртуальной машине или сервере linux;
 			- выполнить задание из раздела "Easy peasy lemon squeezy" на виртуальной машине или сервере linux.
 			Для проверки выполнения прислать ссылку на билд и логин с паролем от учетки, чтобы проверить, или скриншоты если делали через виртуальную машину локально.
+   
+</details>
+
 		
 ### Meta server info:
+ <details><summary>Meta server info:</summary>
+	 
 	- Selnoid:
 		url: http://51.250.71.242:4444/
 	- Jenkins:
@@ -123,5 +158,7 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 		maven: 3.6.3
 		gradle: 4.4.1
 		docker: 24.0.5, build 24.0.5-0ubuntu1~22.04.1
+  
+</details>
 
 
