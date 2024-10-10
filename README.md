@@ -115,7 +115,7 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
 			Для проверки выполнения прислать скриншоты:
 				- команды docker ps или UI с поднятым контейнером selenoid;
 				- скриншот из браузера с выводом статуса selenoid с запущенной сессией.
-		(Jenkins | TeamCity):
+		Jenkins:
 			- Создать билд, который запускает (группу | профиль | папку) с вашими тестами из вашего публичного репозитория в определенное время;
 			- Настроить создание Allure отчета в вашем билде.
 			Для проверки выполнения прислать ссылку на билд.
@@ -146,18 +146,19 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
  <details><summary>Meta server info:</summary>
 	 
 	- Selnoid:
-		url: http://51.250.71.242:4444/
+		url: http://89.169.147.50:4444/
 	- Jenkins:
-		url: http://158.160.59.191:8080
-		login: jenkins_user
+		url: http://89.169.147.50:8080
+		login: aqa
+  		pass: in work chat
 	- Teamcity:
-		url: http://158.160.59.191:8111
-		login: teamcity_user
+		url: n/a
+		login: n/a
 	- Versions:
-		java: openjdk 11.0.22 2024-01-16
-		maven: 3.6.3
+		java: openjdk 17.0.12
+		maven: 3.8.7
 		gradle: 4.4.1
-		docker: 24.0.5, build 24.0.5-0ubuntu1~22.04.1
+		docker: 24.0.7
   
 </details>
 
