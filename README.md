@@ -78,6 +78,15 @@ Lecture for AQA linux, docker, selenoid, CI/CD with info, lessons and links
   </details>
 
 	Более подробней с командами можно ознакомиться тут: https://aerokube.com/selenoid/latest/
+
+ <details><summary>Selenoid command line:</summary>
+	
+	./cm_linux_amd64 selenoid start -c /home/admin/config/
+ 
+  </details>
+
+  	Более подробней с командами можно ознакомиться тут: https://aerokube.com/cm/latest/
+
 	
 	
 ### Jenkins install
